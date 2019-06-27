@@ -77,6 +77,8 @@ spec.prefix_header_file（.pch预编译文件）
     
     pod trunk push iOSLang.podspec --allow-warnings
     
+iOSLangTest项目是CocoaPods维护iOSLang库项目
+
 iOSLangUserDemo项目中使用pod引入iOSLang库
     
     pod 'iOSLang', '1.0.0'
