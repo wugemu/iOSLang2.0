@@ -60,3 +60,15 @@ spec.resources（图片资源文件）
 
     pod lib lint iOSLang.podspec --allow-warnings
     
+给项目打上 tag 版本号并推送到 GitHub
+    
+    git tag "1.0.0"
+    git push --tags
+    
+把 Podspec 文件推送到 Cocoapods 官方库
+    
+    pod trunk push iOSLang.podspec
+    
+    
+    
+    
