@@ -68,7 +68,7 @@ spec.prefix_header_file（.pch预编译文件）
 
     pod lib lint iOSLang.podspec --allow-warnings
     
-给项目打上 tag 版本号并推送到 GitHub
+给项目打上 tag 版本号并推送到 GitHub，注：tag版本号与.podspec 文件中的spec.version保持一致
     
     git tag "1.0.0"
     git push --tags
