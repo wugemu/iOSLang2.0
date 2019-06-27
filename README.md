@@ -44,19 +44,27 @@ github作为仓库，将库上传至远程cocoapods的步骤
     
     spec.resources = "iOSLangTest/IosLangTest/ioslang/res/*.png"
     
+    # spec.dependency "AFNetworking", "~> 3.0"
+     
+    spec.prefix_header_file = 'iOSLangTest/IosLangTest/ioslang.pch'
+    
     end
     
 spec.version（版本号）
 
 spec.platform（iOS项目支持的最低系统）
 
-spec.source_files（代码资源文件）
+spec.source_files（代码资源文件路径,路径指向要打包的组件代码）
 
-spec.resources（图片资源文件）
+spec.resources（资源文件路径,路径指向要打包的组件资源）
+
+spec.dependency（本组件所依赖的pod库）
+
+spec.prefix_header_file（.pch预编译文件）
 
 (查看更多podspec文件相关配置)[https://www.jianshu.com/p/75e19c92df50]
 
-验证 podspec 文件
+验证 podspec 文件 ，--allow-warnings 忽略警告
 
     pod lib lint iOSLang.podspec --allow-warnings
     
@@ -65,9 +73,9 @@ spec.resources（图片资源文件）
     git tag "1.0.0"
     git push --tags
     
-把 Podspec 文件推送到 Cocoapods 官方库
+把 Podspec 文件推送到 Cocoapods 官方库 ，--allow-warnings 忽略警告
     
-    pod trunk push iOSLang.podspec
+    pod trunk push iOSLang.podspec --allow-warnings
     
     
     

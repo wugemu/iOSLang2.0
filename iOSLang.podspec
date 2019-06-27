@@ -32,6 +32,7 @@ Pod::Spec.new do |spec|
   # spec.resource  = "icon.png"
   spec.resources = "iOSLangTest/IosLangTest/ioslang/res/*.png"
 
+  # spec.dependency "AFNetworking", "~> 3.0"
   spec.prefix_header_file = 'iOSLangTest/IosLangTest/ioslang.pch'
 
 end
