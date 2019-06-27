@@ -1,0 +1,16 @@
+PODS:
+  - iOSLang (1.0.0)
+
+DEPENDENCIES:
+  - iOSLang (= 1.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - iOSLang
+
+SPEC CHECKSUMS:
+  iOSLang: dfec4a20d8d6b626449477beeece55c91768337f
+
+PODFILE CHECKSUM: 1bd249ec0757c5787a5159a9d3134e7bb91263cf
+
+COCOAPODS: 1.6.0.beta.1
